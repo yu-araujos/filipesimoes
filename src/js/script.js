@@ -13,10 +13,6 @@ new fullpage('#fullpage', {
   anchors:['inicio', 'sobre', 'timeline'],
   paddingTop: '1em',
   navigation: true,
-  afterLoad: function (anchorLink, index) {
-    console.log(anchorLink);
-    console.log(index)
-  },
 });
 
 $(".step").click( function() {

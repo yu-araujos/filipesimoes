@@ -72,3 +72,27 @@
   z-index: 1000;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .background-f {
+    font-size: 35rem;
+  }
+  
+  .texto-apresentacao {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-infos {
+    padding-top: 300px;
+    height: 100%;
+  }
+
+  .background-f {
+    font-size: 25rem;
+  }
+  
+  .texto-apresentacao {
+    font-size: 3rem;
+  }
+}

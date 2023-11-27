@@ -327,6 +327,26 @@ header aside ul li a:hover {
   z-index: 1000;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .background-f {
+    font-size: 35rem;
+  }
+  .texto-apresentacao {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 767px) {
+  .main-infos {
+    padding-top: 300px;
+    height: 100%;
+  }
+  .background-f {
+    font-size: 25rem;
+  }
+  .texto-apresentacao {
+    font-size: 3rem;
+  }
+}
 .marquee {
   margin-top: -100px;
   width: 100%;
@@ -360,6 +380,35 @@ header aside ul li a:hover {
 @keyframes scrolling {
   0% {
     transform: translateX(-100%);
+  }
+}
+@media (max-width: 767px) {
+  .marquee {
+    margin-top: 50px;
+    width: 100%;
+    grid-column-gap: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    overflow: hidden;
+  }
+  .marquee-content {
+    min-width: 100%;
+    grid-column-gap: 1rem;
+    flex: none;
+    justify-content: space-around;
+    display: flex;
+  }
+  .text-block {
+    color: #F4F4F4;
+    text-transform: uppercase;
+    font-family: "Poppins";
+    font-size: 8vw;
+    font-weight: 200;
+    line-height: 1;
+    animation: scrolling 30s linear infinite;
+  }
+  .text-block span {
+    color: #FF7315;
   }
 }
 .sobre-infos {
