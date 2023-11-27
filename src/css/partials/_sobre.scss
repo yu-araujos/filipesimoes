@@ -54,3 +54,43 @@
     transition: 0.2s ease-in;
   }
 }
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .sobre-infos {
+    height: 100%;
+    margin-top: 500px;
+  }
+  
+  
+  .img-filipe {
+    margin: 100px !important;
+    img {
+      width: 25%;
+    }
+  }
+  
+  .text-about {
+    padding-top: 50px;
+    color: $white;
+    p {
+      font-family: "Poppins";
+    }
+  }  
+}
+
+@media (max-width: 767px) {
+  .img-filipe {
+    img {
+      width: 75%;
+      border-radius: 15px;
+    }
+  }
+  
+  .text-about {
+    color: $white;
+    p {
+      font-family: "Poppins";
+    }
+  }  
+}

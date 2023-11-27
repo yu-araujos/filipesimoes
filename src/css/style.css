@@ -468,6 +468,37 @@ header aside ul li a:hover {
   transition: 0.2s ease-in;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .sobre-infos {
+    height: 100%;
+    margin-top: 500px;
+  }
+  .img-filipe {
+    margin: 100px !important;
+  }
+  .img-filipe img {
+    width: 25%;
+  }
+  .text-about {
+    padding-top: 50px;
+    color: #F4F4F4;
+  }
+  .text-about p {
+    font-family: "Poppins";
+  }
+}
+@media (max-width: 767px) {
+  .img-filipe img {
+    width: 75%;
+    border-radius: 15px;
+  }
+  .text-about {
+    color: #F4F4F4;
+  }
+  .text-about p {
+    font-family: "Poppins";
+  }
+}
 .timeline-infos {
   height: 85vh;
   font-family: "CourierCode";
