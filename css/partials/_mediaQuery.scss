@@ -1,3 +1,11 @@
+@media (max-width: 1000px) {
+  .introducao {
+    h1 {
+      font-size: 3rem;
+    }
+  }
+}
+
 @media (max-width: 800px) {
   .header {
     flex-direction: column;
@@ -7,5 +15,118 @@
     &__menu__icons {
       padding-left: 0;
     }
+  }
+
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+
+      &::before {
+        width: 40px;
+        height: 10px;
+        left: 0px;
+      }
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  .experiencia {
+    grid-template-columns: 1fr;
+    gap: 40px;
+
+    .subtitulo {
+      font-size: 7rem;
+      word-break: normal;
+    }
+  }
+
+  .experiencia-texto {
+    font-size: 1.25rem;
+  }
+
+  .empresa-ano {
+    position: initial;
+    order: 1;
+    width: initial;
+    text-align: left;
+  }
+
+  .formacao-container {
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+    gap: 40px;
+  }
+
+  .formacao {
+    .subtitulo {
+      font-size: 7rem;
+      word-break: normal;
+    }
+  }
+
+  .formacao-texto {
+    font-size: 1.25rem;
+  }
+
+  .formacao-extra {
+    h3 {
+      &::before {
+        position: initial;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-contato li {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .introducao {
+    grid-template-columns: 1fr;
+
+    .img-filipe {
+      display: none;
+    }
+  }
+
+  .experiencia {
+    grid-template-columns: 1fr;
+
+    .subtitulo {
+      font-size: 3rem;
+      word-break: normal;
+    }
+  }
+
+  .experiencia-texto {
+    font-size: 1rem;
+  }
+
+  .empresa {
+    grid-template-columns: 1fr;
+  }
+
+  .formacao {
+    .subtitulo {
+      font-size: 3rem;
+    }
+  }
+
+  .formacao-texto {
+    font-size: 1rem;
   }
 }

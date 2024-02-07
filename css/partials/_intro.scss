@@ -10,21 +10,29 @@
   h1 {
     font-size: 4.5rem;
     line-height: 1.125;
+    margin-bottom: 30px;
     position: relative;
 
     &::before {
-      content: '';
+      content: "";
       display: block;
       width: 130px;
       height: 100px;
-      background-image: url('../../img/detalhe.svg') no-repeat center;
+      background: url("../../img/detalhe.svg") no-repeat center;
       position: absolute;
-      top: 0;
+      top: -15px;
+      left: -40px;
+      z-index: -1;
     }
   }
 
-  .img-filipe {
-    clip-path: circle(50% at 50% 50%);
-    margin-bottom: 30px;
+  p {
+    font-size: 2rem;
+    color: var(--gray);
   }
-}
+
+    .img-filipe {
+      clip-path: circle(50% at 50% 50%);
+      margin-bottom: 30px;
+    }
+  }
